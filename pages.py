@@ -3,7 +3,7 @@ import locators
 class Homepage():
     def check_title(self):
         #checks the correct page is loaded
-        return "Google" in self.driver.title
+        return True if self.driver.title == "Google" else False
 
     def search_empty(self):
         #checks if the search box is empty
