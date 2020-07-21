@@ -23,7 +23,7 @@ Search engine: WWW.GOOGLE.COM
 ------2nd Testcase------- "Results Found"  
 
 *Goal: 
-       - Testing the search engine in searching for search term that has multiple search results
+       - Testing the search engine in searching for search term that has search results
 
        - Testing the clear button in the searchbox functionality
        
@@ -46,4 +46,4 @@ Search engine: WWW.GOOGLE.COM
                                           
             6. Verify that the loaded page corresponds to the desired search term
             
-            7. Check the number of found results
+            7. Verify search results were found
