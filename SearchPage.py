@@ -25,10 +25,10 @@ class SearchPage(object):
 
     def get_results(self):
         """ Retrieves the number of results found
-            return: Number of results found, No results found (False)
+            return: Results found (True), No results found (False)
         """
         if "did not match any documents" in self.driver.page_source:
             return False
         else:
-            return self.driver.find_element_by_xpath(self.result).get_attribute("value")
+            return True
 

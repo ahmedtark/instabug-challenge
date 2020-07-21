@@ -26,7 +26,7 @@ try:
     home.search_button()
     assert searchPage.check_title("instabug"), "wrong search page loaded"
     searchPage.verify_search("instabug")
-    logging.info(searchPage.get_results())
+    assert searchPage.get_results()
 
 except:
     """Recovery block when failed
