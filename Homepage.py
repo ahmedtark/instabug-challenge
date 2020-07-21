@@ -19,7 +19,7 @@ class Homepage():
         """ checks if the search box is empty
             return: clear (True), filled (False)
         """
-        return True if not self.driver.find_element_by_xpath(self.search).getAttribute("value") else False
+        return True if self.driver.find_element_by_xpath(self.search).get_attribute("value")== "" else False
 
     def search_text(self, text, clear= 0):
         """ inputs the required search term to the searchbox,

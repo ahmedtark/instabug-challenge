@@ -19,6 +19,7 @@ try:
     searchPage= SearchPage.SearchPage(driver)
     assert home.check_title(), "This is not Google.com"
     home.search_text(text="bugs bunny", clear=1)
+    assert home.search_empty()
     home.search_button()
     assert home.check_title(), "This is not Google.com"
     home.search_text(text="instabug")
